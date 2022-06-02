@@ -1,0 +1,83 @@
+.container {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr 2fr; 
+  grid-template-rows: 100px 200px 80px 80px 100px; 
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  grid-template-areas:  "header header header header"
+  "main main sidebar sidebar"
+  "main main sidebar sidebar"
+  "main main sidebar sidebar";
+}
+
+.header {
+  grid-area: 1 / 1 / 2 / 5;
+  background-color:  rgb(214, 213, 213);
+  padding: 40px;
+}
+
+.main {
+  grid-area: 2 / 1 / 5 / 3;
+  background-color: rgb(255, 242, 214);
+  padding: 40px;
+}
+
+.content-1 {
+  grid-area: 3 / 1 / 4 / 2;
+  background-color: rgb(255, 232, 195);
+  border: 10px solid rgb(255, 242, 214);
+  padding: 20px;
+}
+
+.content-2 {
+  grid-area: 3 / 2 / 4 / 3;
+  background-color: rgb(255, 232, 195);
+  border: 10px solid rgb(255, 242, 214);
+  padding: 20px;
+}
+
+.content-3 {
+  grid-area: 4 / 1 / 5 / 3;
+  background-color: rgb(255, 232, 195);
+  border: 10px solid rgb(255, 242, 214);
+  padding: 20px;
+}
+
+.sidebar {
+  grid-area: 2 / 3 / 5 / 5;
+  grid-area: sidebar;
+  background-color: rgb(217, 244, 178);
+  padding: 40px;
+}
+
+.footer-1 {
+  grid-area: 5 / 1 / 6 / 2;
+  background-color: rgb(244, 243, 243);
+  border: 10px solid rgb(218, 216, 216);
+  padding: 30px;
+}
+
+.footer-2 {
+  grid-area: 5 / 2 / 6 / 3;
+  background-color: rgb(244, 243, 243);
+  border: 10px solid rgb(218, 216, 216);
+  padding: 30px;
+}
+
+.footer-3 {
+  grid-area: 5 / 3 / 6 / 4;
+  background-color: rgb(244, 243, 243);
+  border: 10px solid rgb(218, 216, 216);
+  padding: 30px;
+}
+
+.footer-4 {
+  grid-area: 5 / 4 / 6 / 5;
+  background-color: rgb(244, 243, 243);
+  border: 10px solid rgb(218, 216, 216);
+  padding: 30px;
+}
